@@ -1,0 +1,19 @@
+num = int(input("Digite um número para verificar se ele pertence à sequência de Fibonacci: ")
+
+# Inicializando os valores de Fibonacci
+fib1, fib2 = 0, 1
+fib = fib1 + fib2
+
+# Enquanto a sequência de Fibonacci for menor ou igual ao número informado
+while fib <= num:
+    # Se o número informado for igual a um dos valores de Fibonacci, exibe a mensagem e encerra o programa
+    if fib == num:
+        print(f"{num} pertence à sequência de Fibonacci.")
+        quit()
+    # Caso contrário, atualiza os valores de Fibonacci e continua a busca
+    fib1 = fib2
+    fib2 = fib
+    fib = fib1 + fib2
+
+# Se o número informado não pertence à sequência de Fibonacci, exibe a mensagem correspondente
+print(f"{num} não pertence à sequência de Fibonacci.")
