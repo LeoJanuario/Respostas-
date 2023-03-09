@@ -1,0 +1,11 @@
+# lê a string do usuário
+s = input('Digite uma Palavra: ')
+
+# inverte os caracteres da string
+s_invertida = ''
+for i in range(len(s) - 1, -1, -1):
+    s_invertida += s[i]
+
+# imprime a string invertida
+print('String original:', s)
+print('String invertida:', s_invertida)
